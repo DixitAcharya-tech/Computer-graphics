@@ -1,0 +1,22 @@
+Experiment – 1
+Digital Differential Analyzer (DDA) Algorithm
+Objective:
+To implement the Digital Differential Analyzer (DDA) Algorithm for drawing a line segment between two given end points A(x1, y1) and B(x2, y2).
+
+Theory:
+Digital Differential Analyzer (DDA) is an incremental scan conversion algorithm used to draw straight lines on raster displays. The algorithm works by calculating intermediate points between two given endpoints using incremental steps. The unit steps are taken along the axis having the greatest change.
+
+Algorithm:
+1. Start.
+2. Declare variables x, y, x1, y1, x2, y2, dx, dy, s, xi, yi, k.
+3. Initialize graphics mode.
+4. Input the two endpoints.
+5. Plot the first point.
+6. Calculate dx = x2 - x1 and dy = y2 - y1.
+7. If abs(dx) > abs(dy), s = abs(dx) else s = abs(dy).
+8. Compute xi = dx / s and yi = dy / s.
+9. Increment x and y and plot pixels.
+10. Close graphics.
+
+Result:
+The DDA algorithm is successfully implemented and a straight line is drawn between the given points.
