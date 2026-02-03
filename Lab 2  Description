@@ -1,0 +1,26 @@
+Bresenham’s Line Drawing Algorithm
+Objectives :
+To implement Bresenham’s Line Drawing Algorithm for drawing a line segment between two given end points A(x1, y1) and B(x2, y2).
+
+Theory:
+Bresenham’s Line Drawing Algorithm is an efficient incremental scan conversion algorithm used to draw straight lines on raster displays. It uses integer arithmetic and avoids floating point calculations, making it faster than DDA. The algorithm decides which pixel is closer to the actual line using a decision parameter.
+
+Basic Concept:
+• Move across the x-axis in unit steps.
+• At each step, choose between two possible y values.
+• The choice depends on the decision parameter p.
+• The pixel closest to the ideal line is selected.
+
+Algorithm:
+1. Input the two endpoints and store the left endpoint as (x0, y0).
+2. Plot the initial point (x0, y0).
+3. Calculate Δx = x2 − x1 and Δy = y2 − y1.
+4. Initialize decision parameter p = 2Δy − Δx.
+5. For each x position:
+   a) If p < 0, plot (x+1, y) and p = p + 2Δy.
+   b) Else plot (x+1, y+1) and p = p + 2Δy − 2Δx.
+6. Repeat until the final point is reached.
+
+Result:
+Thus, Bresenham’s Line Drawing Algorithm is successfully implemented and a straight line is drawn between the given endpoints.
+
