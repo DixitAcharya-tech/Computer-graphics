@@ -1,0 +1,37 @@
+Creating Two Dimensional Objects Using C Graphics
+
+Objective
+To write and execute a C program using basic graphics functions to create simple two-dimensional objects such as House, Car, Fish, and Man by using line, circle, ellipse, rectangle, and drawpoly functions.
+
+Theory
+Computer Graphics is a field of computer science that deals with generating, manipulating, and displaying visual images using computers. In C language, graphics can be implemented using the BGI (Borland Graphics Interface) library, which provides several built-in functions to draw basic geometric shapes.
+Two-dimensional objects are formed by combining simple shapes like lines, circles, rectangles, and polygons. These shapes are drawn on a coordinate system where each point is represented by its X and Y coordinates.
+The following graphics functions are used in this experiment:
+line(x1, y1, x2, y2):
+Draws a straight line between two points.
+circle(x, y, r):
+Draws a circle with center at (x, y) and radius r.
+ellipse(x, y, startangle, endangle, xradius, yradius):
+Draws an ellipse with specified center and radii.
+rectangle(left, top, right, bottom):
+Draws a rectangle using top-left and bottom-right coordinates.
+drawpoly(num, points):
+Draws polygons like triangles and other closed shapes using a set of points.
+By combining these functions, complex objects such as houses, cars, fish, and human figures can be constructed.
+
+Procedure
+
+i. Initialize the graphics driver using initgraph().
+ii. Use basic graphics functions such as line, circle, rectangle, ellipse, and drawpoly.
+iii. Draw individual components of each object (house, car, fish, man).
+iv. Display the output on the screen.
+v. Close the graphics mode using closegraph().
+
+
+Result
+
+The C program was successfully executed, and the two-dimensional objects House, Car, Fish, and Man were displayed on the screen using basic graphics functions.
+
+Conclusion
+
+This experiment helped in understanding the use of basic graphics functions available in C language. By combining simple geometric shapes, complex two-dimensional objects can be created effectively. The experiment demonstrates how computer graphics can be used to visually represent objects using coordinate geometry.
