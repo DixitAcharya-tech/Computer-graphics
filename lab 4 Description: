@@ -1,0 +1,17 @@
+Ellipse Generation Algorithm
+Objective:
+To implement the Ellipse Generation Algorithm for drawing an ellipse of given center (x, y) and radius rx and ry.
+
+Theory:	
+In an ellipse, symmetry exists between quadrants but not between octants. Therefore, pixel positions are calculated for one quadrant and mirrored to the remaining three quadrants using symmetry. Pixel selection is based on a decision parameter.
+
+Algorithm:
+1. Input rx, ry and ellipse center (xc, yc).
+2. Compute initial decision parameter for region 1.
+3. Calculate pixel positions in region 1 using decision parameter.
+4. Compute initial decision parameter for region 2.
+5. Calculate pixel positions in region 2.
+6. Apply symmetry to obtain remaining quadrants.
+7. Plot ellipse using translated coordinates.
+Conclusion:
+The Midpoint Ellipse Generation algorithm was successfully implemented using integer arithmetic. By dividing the ellipse into two regions and applying symmetry, accurate pixel positions were generated efficiently. This algorithm is suitable for precise and real-time ellipse drawing in computer graphics.
